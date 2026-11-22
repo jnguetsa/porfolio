@@ -6,6 +6,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base:"/porfolio/",
     plugins: [
       react(),
       tailwindcss(),
@@ -28,8 +29,6 @@ export default defineConfig(() => {
         },
       },
     ],
-    base:"/porfolio",
-
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

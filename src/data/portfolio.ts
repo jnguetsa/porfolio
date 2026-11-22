@@ -1,4 +1,9 @@
 import type { Language } from '../context/PreferencesContext';
+import juniorPortraitImg from '../assets/images/junior_portrait.jpeg';
+import carnetRougeImg from '../assets/images/project_carnet_rouge_1795332635830.jpg';
+import lastLightImg from '../assets/images/project_last_light_1795332637295.jpg';
+import puoloArchitectureImg from '../assets/images/project_puolo_architecture_1795332637933.jpg';
+import ragVectorImg from '../assets/images/project_rag_vector_1795332636095.jpg';
 
 export type ProjectCategory = 'all' | 'backend-ai' | 'fullstack-pwa' | 'hackathon-arch';
 
@@ -72,7 +77,7 @@ export const PROFILE_STATIC = {
     gitlab: 'https://gitlab.com/jnior',
     linkedin: 'https://www.linkedin.com/in/junior-noumedem-nguetsa-13a339262',
   },
-  heroImage: '/src/assets/images/junior_portrait.jpeg',
+  heroImage: juniorPortraitImg,
 };
 
 export interface PortfolioContent {
@@ -203,7 +208,7 @@ const FR_DATA: PortfolioContent = {
     roleKicker: 'Élève Ingénieur ING4 · Yaoundé, Cameroun',
     headline: 'Architecture Backend, Systèmes IA & Full-Stack.',
     summary:
-      "Élève ingénieur en Informatique & Systèmes d'Information (ING4) et titulaire d'une Licence en Génie Logiciel. Développeur Full-Stack axé Backend, Bases de données et architectures IA (NestJS, Angular, PostgreSQL/pgvector), avec une appétence marquée pour le DevOps (Docker, CI/CD, Git). À la recherche d'un stage technique pour participer à la conception et au déploiement de solutions robustes.",
+        "Élève ingénieur en Informatique & Systèmes d'Information (ING4) et titulaire d'une Licence en Génie Logiciel. Développeur Full-Stack axé Backend, Bases de données et architectures IA (NestJS, Angular, PostgreSQL/pgvector), avec une appétence marquée pour le DevOps (Docker, CI/CD, Git). À la recherche d'un stage technique pour participer à la conception et au déploiement de solutions robustes.",
     ctaPrimary: 'Explorer les projets',
     ctaSecondary: 'Discuter d’un stage',
     seekingTag: 'Recherche stage technique',
@@ -232,7 +237,7 @@ const FR_DATA: PortfolioContent = {
     kicker: 'Exploration spatiale WebGL · Three.js',
     title: 'Écosystème d’architecture interactif',
     subtitle:
-      'Faites pivoter la scène à 360°, cliquez sur un nœud 3D pour inspecter son rôle ou activez la vue éclatée pour observer chaque couche système.',
+        'Faites pivoter la scène à 360°, cliquez sur un nœud 3D pour inspecter son rôle ou activez la vue éclatée pour observer chaque couche système.',
     hint: 'Glisser pour pivoter · Molette pour zoomer · Cliquer un module',
     hoverLabel: 'Aperçu au survol',
     selectedLabel: 'Module sélectionné',
@@ -253,7 +258,7 @@ const FR_DATA: PortfolioContent = {
     kicker: 'Réalisations sélectionnées',
     title: 'Projets & Architectures',
     subtitle:
-      'Systèmes distribués, recherche vectorielle, applications hors-ligne et sprints hackathon. Filtrez par domaine pour afficher chaque réalisation en pleine largeur.',
+        'Systèmes distribués, recherche vectorielle, applications hors-ligne et sprints hackathon. Filtrez par domaine pour afficher chaque réalisation en pleine largeur.',
     filters: [
       { id: 'all', label: 'Tous' },
       { id: 'backend-ai', label: 'Backend & IA' },
@@ -279,16 +284,16 @@ const FR_DATA: PortfolioContent = {
         period: '2025',
         context: 'Plateforme académique sécurisée',
         summary:
-          "Plateforme de suivi d'assiduité conçue pour plusieurs établissements, intégrant la gestion fine des rôles (RBAC), un module d'émargement PWA fonctionnant hors-ligne et une protection active contre les attaques par brute-force.",
+            "Plateforme de suivi d'assiduité conçue pour plusieurs établissements, intégrant la gestion fine des rôles (RBAC), un module d'émargement PWA fonctionnant hors-ligne et une protection active contre les attaques par brute-force.",
         architectureDetails:
-          "Architecture monolithique modulaire sous Spring Boot avec rendu serveur Thymeleaf et stylisation Tailwind CSS. Les données d'émargement sont persistées localement via Service Worker en mode déconnecté puis synchronisées automatiquement dès le retour réseau.",
+            "Architecture monolithique modulaire sous Spring Boot avec rendu serveur Thymeleaf et stylisation Tailwind CSS. Les données d'émargement sont persistées localement via Service Worker en mode déconnecté puis synchronisées automatiquement dès le retour réseau.",
         highlights: [
           'Contrôle d’accès basé sur les rôles (RBAC) cloisonné par établissement',
           'Module d’émargement PWA hors-ligne avec file de synchronisation',
           'Protection anti-brute-force et durcissement des endpoints d’authentification',
         ],
         stack: ['Spring Boot', 'Thymeleaf', 'Tailwind CSS', 'PWA Hors-ligne', 'RBAC'],
-        image: '/src/assets/images/project_carnet_rouge_1795332635830.jpg',
+        image: carnetRougeImg,
         imageAlt: 'Interface analytique sombre de suivi d’assiduité CarnetRouge',
         featuredSpan: 'wide',
       },
@@ -302,16 +307,16 @@ const FR_DATA: PortfolioContent = {
         period: '14–15 Novembre 2026',
         context: 'NASA Space Apps Challenge',
         summary:
-          "Application web conçue, développée et déployée en conditions réelles de sprint durant le hackathon organisé par NASA SPACE les 14 et 15 novembre 2026.",
+            "Application web conçue, développée et déployée en conditions réelles de sprint durant le hackathon organisé par NASA SPACE les 14 et 15 novembre 2026.",
         architectureDetails:
-          "Conception rapide d'une interface web interactive orientée narration scientifique et exploration de données spatiales, livrée et mise en production continue sur Vercel dans le délai imparti de 48 heures.",
+            "Conception rapide d'une interface web interactive orientée narration scientifique et exploration de données spatiales, livrée et mise en production continue sur Vercel dans le délai imparti de 48 heures.",
         highlights: [
           'Sprint collaboratif de 48 heures sous contrainte de livraison continue',
           'Application web publique accessible en ligne sur Vercel',
           'Architecture front-end fluide orientée visualisation et réactivité',
         ],
         stack: ['Web App', 'Déploiement Vercel', 'NASA Space Apps', 'Git Flow'],
-        image: '/src/assets/images/project_last_light_1795332637295.jpg',
+        image: lastLightImg,
         imageAlt: 'Horizon terrestre en orbite basse illuminé au crépuscule pour The Last Light',
         liveUrl: 'https://the-last-light-web.vercel.app',
         liveLabel: 'Visiter l’application',
@@ -327,16 +332,16 @@ const FR_DATA: PortfolioContent = {
         period: 'Projet personnel',
         context: 'Modélisation & Base de données',
         summary:
-          "Modélisation UML complète et architecture relationnelle de base de données pour une plateforme d'intermédiation mettant en relation prestataires de services, propriétaires et clients.",
+            "Modélisation UML complète et architecture relationnelle de base de données pour une plateforme d'intermédiation mettant en relation prestataires de services, propriétaires et clients.",
         architectureDetails:
-          "Définition rigoureuse des cas d'utilisation, diagrammes de classes et schémas entité-association garantissant l'intégrité référentielle des transactions, réservations et profils multi-rôles.",
+            "Définition rigoureuse des cas d'utilisation, diagrammes de classes et schémas entité-association garantissant l'intégrité référentielle des transactions, réservations et profils multi-rôles.",
         highlights: [
           'Diagrammes UML complets (cas d’utilisation, classes, séquences)',
           'Schéma relationnel normalisé prêt pour l’implémentation PostgreSQL / MySQL',
           'Séparation claire des domaines services, biens immobiliers et utilisateurs',
         ],
         stack: ['Modélisation UML', 'Architecture BDD', 'PostgreSQL', 'Clean Architecture'],
-        image: '/src/assets/images/project_puolo_architecture_1795332637933.jpg',
+        image: puoloArchitectureImg,
         imageAlt: 'Maquette architecturale minimaliste sur plans techniques pour PuoLo',
         featuredSpan: 'compact',
       },
@@ -350,16 +355,16 @@ const FR_DATA: PortfolioContent = {
         period: '2025 – 2026',
         context: 'Architecture Multi-clients',
         summary:
-          "Architecture complète d'un backend NestJS propulsé par recherche sémantique vectorielle (pgvector), accompagnée d'un dashboard d'administration sous Angular et d'une application mobile React Native.",
+            "Architecture complète d'un backend NestJS propulsé par recherche sémantique vectorielle (pgvector), accompagnée d'un dashboard d'administration sous Angular et d'une application mobile React Native.",
         architectureDetails:
-          "Pipeline d'ingestion documentaire découpant et indexant les embeddings directement dans PostgreSQL via pgvector. L'API REST NestJS orchestre la récupération contextuelle et expose les flux aux clients web Angular et mobile React Native.",
+            "Pipeline d'ingestion documentaire découpant et indexant les embeddings directement dans PostgreSQL via pgvector. L'API REST NestJS orchestre la récupération contextuelle et expose les flux aux clients web Angular et mobile React Native.",
         highlights: [
           'Indexation et similarité vectorielle sous PostgreSQL avec extension pgvector',
           'Backend API structuré en NestJS selon les principes de Clean Architecture',
           'Double interface : console d’administration Angular et client mobile React Native',
         ],
         stack: ['NestJS', 'PostgreSQL / pgvector', 'RAG', 'Angular', 'React Native'],
-        image: '/src/assets/images/project_rag_vector_1795332636095.jpg',
+        image: ragVectorImg,
         imageAlt: 'Schéma isométrique de couches documentaires et nœuds vectoriels pour le système RAG',
         featuredSpan: 'wide',
       },
@@ -369,7 +374,7 @@ const FR_DATA: PortfolioContent = {
     kicker: 'Socle technique',
     title: 'Compétences d’ingénierie',
     subtitle:
-      'Un profil orienté backend, bases de données vectorielles et industrialisation DevOps, capable de livrer des interfaces web et mobiles complètes.',
+        'Un profil orienté backend, bases de données vectorielles et industrialisation DevOps, capable de livrer des interfaces web et mobiles complètes.',
     allTab: 'Tous les pôles',
     domains: [
       {
@@ -490,7 +495,7 @@ const FR_DATA: PortfolioContent = {
         date: '14–15 Novembre 2026',
         place: 'Édition 2026',
         description:
-          "Conception et déploiement en équipe de l'application web The Last Light durant le hackathon organisé par NASA SPACE.",
+            "Conception et déploiement en équipe de l'application web The Last Light durant le hackathon organisé par NASA SPACE.",
         url: 'https://the-last-light-web.vercel.app',
         urlLabel: 'the-last-light-web.vercel.app',
       },
@@ -500,7 +505,7 @@ const FR_DATA: PortfolioContent = {
         date: 'Juin 2025',
         place: 'Polytechnique Yaoundé (ENSPY)',
         description:
-          "Participation et présentation d'un pitch de projet lors de la compétition inter-écoles organisée par le COMSAS à l'ENSPY.",
+            "Participation et présentation d'un pitch de projet lors de la compétition inter-écoles organisée par le COMSAS à l'ENSPY.",
       },
     ],
   },
@@ -508,7 +513,7 @@ const FR_DATA: PortfolioContent = {
     kicker: 'Contact direct',
     title: 'Disponible pour un stage technique',
     subtitle:
-      'Ouvert aux opportunités de stage en développement Backend, Full-Stack, architectures IA ou DevOps à Yaoundé, à l’international ou en télétravail.',
+        'Ouvert aux opportunités de stage en développement Backend, Full-Stack, architectures IA ou DevOps à Yaoundé, à l’international ou en télétravail.',
     location: 'Yaoundé, Cameroun',
     copy: 'Copier',
     copied: 'Copié',
@@ -516,7 +521,7 @@ const FR_DATA: PortfolioContent = {
     copyPhoneAria: 'Copier le numéro',
     formTitle: 'Envoyer un message',
     formSubtitle:
-      'Rédigez votre proposition ou demande d’entretien : votre messagerie s’ouvrira pré-remplie.',
+        'Rédigez votre proposition ou demande d’entretien : votre messagerie s’ouvrira pré-remplie.',
     nameLabel: 'Nom complet',
     namePlaceholder: 'Ex. Marc Fotso',
     emailLabel: 'Adresse email',
@@ -557,7 +562,7 @@ const EN_DATA: PortfolioContent = {
     roleKicker: 'Engineering Student (ING4) · Yaoundé, Cameroon',
     headline: 'Backend Architecture, AI Systems & Full-Stack.',
     summary:
-      'Computer Science & Information Systems engineering student (ING4) holding a Bachelor’s degree in Software Engineering. Full-Stack developer focused on Backend, Databases, and AI architectures (NestJS, Angular, PostgreSQL/pgvector), with a strong drive for DevOps (Docker, CI/CD, Git). Seeking a technical internship to design and deploy robust systems.',
+        'Computer Science & Information Systems engineering student (ING4) holding a Bachelor’s degree in Software Engineering. Full-Stack developer focused on Backend, Databases, and AI architectures (NestJS, Angular, PostgreSQL/pgvector), with a strong drive for DevOps (Docker, CI/CD, Git). Seeking a technical internship to design and deploy robust systems.',
     ctaPrimary: 'Explore projects',
     ctaSecondary: 'Discuss an internship',
     seekingTag: 'Seeking technical internship',
@@ -586,7 +591,7 @@ const EN_DATA: PortfolioContent = {
     kicker: 'WebGL Spatial Explorer · Three.js',
     title: 'Interactive Architecture Ecosystem',
     subtitle:
-      'Orbit the 3D scene in 360°, click any 3D subsystem node to inspect its role, or slide the exploded view to examine every architectural layer.',
+        'Orbit the 3D scene in 360°, click any 3D subsystem node to inspect its role, or slide the exploded view to examine every architectural layer.',
     hint: 'Drag to orbit · Scroll to zoom · Click a module',
     hoverLabel: 'Hover preview',
     selectedLabel: 'Selected module',
@@ -607,7 +612,7 @@ const EN_DATA: PortfolioContent = {
     kicker: 'Selected Works',
     title: 'Projects & Architectures',
     subtitle:
-      'Distributed systems, vector search, offline-capable web apps, and hackathon sprints. Filter by domain to inspect each project full-width.',
+        'Distributed systems, vector search, offline-capable web apps, and hackathon sprints. Filter by domain to inspect each project full-width.',
     filters: [
       { id: 'all', label: 'All' },
       { id: 'backend-ai', label: 'Backend & AI' },
@@ -633,16 +638,16 @@ const EN_DATA: PortfolioContent = {
         period: '2025',
         context: 'Secure Academic Platform',
         summary:
-          'Multi-institution attendance tracking platform built with Spring Boot, Thymeleaf, and Tailwind CSS, featuring fine-grained role-based access control (RBAC), an offline-first PWA sign-in module, and brute-force protection.',
+            'Multi-institution attendance tracking platform built with Spring Boot, Thymeleaf, and Tailwind CSS, featuring fine-grained role-based access control (RBAC), an offline-first PWA sign-in module, and brute-force protection.',
         architectureDetails:
-          'Modular Spring Boot architecture with server-rendered Thymeleaf templates and Tailwind CSS. Attendance records are persisted locally via Service Worker when offline and automatically synchronized once connectivity resumes.',
+            'Modular Spring Boot architecture with server-rendered Thymeleaf templates and Tailwind CSS. Attendance records are persisted locally via Service Worker when offline and automatically synchronized once connectivity resumes.',
         highlights: [
           'Institution-scoped Role-Based Access Control (RBAC)',
           'Offline-capable PWA attendance check-in with background sync queue',
           'Brute-force protection and authentication endpoint hardening',
         ],
         stack: ['Spring Boot', 'Thymeleaf', 'Tailwind CSS', 'Offline PWA', 'RBAC'],
-        image: '/src/assets/images/project_carnet_rouge_1795332635830.jpg',
+        image: carnetRougeImg,
         imageAlt: 'CarnetRouge dark analytics attendance tracking interface mockup',
         featuredSpan: 'wide',
       },
@@ -656,16 +661,16 @@ const EN_DATA: PortfolioContent = {
         period: 'November 14–15, 2026',
         context: 'NASA Space Apps Challenge',
         summary:
-          'Web application designed, built, and deployed live during the 48-hour NASA SPACE Hackathon held on November 14–15, 2026.',
+            'Web application designed, built, and deployed live during the 48-hour NASA SPACE Hackathon held on November 14–15, 2026.',
         architectureDetails:
-          'Rapid engineering of an interactive web experience focused on space data exploration and visual storytelling, continuously deployed to Vercel within the 48-hour hackathon sprint.',
+            'Rapid engineering of an interactive web experience focused on space data exploration and visual storytelling, continuously deployed to Vercel within the 48-hour hackathon sprint.',
         highlights: [
           '48-hour collaborative engineering sprint under live delivery constraints',
           'Publicly deployed web application hosted on Vercel',
           'Responsive front-end architecture tailored for data storytelling',
         ],
         stack: ['Web App', 'Vercel Deployment', 'NASA Space Apps', 'Git Flow'],
-        image: '/src/assets/images/project_last_light_1795332637295.jpg',
+        image: lastLightImg,
         imageAlt: 'Orbital twilight horizon view for The Last Light NASA project',
         liveUrl: 'https://the-last-light-web.vercel.app',
         liveLabel: 'Visit live app',
@@ -681,16 +686,16 @@ const EN_DATA: PortfolioContent = {
         period: 'Personal Project',
         context: 'Modeling & Database Design',
         summary:
-          'Comprehensive UML modeling and relational database architecture for a service intermediation and real estate marketplace connecting providers, landlords, and clients.',
+            'Comprehensive UML modeling and relational database architecture for a service intermediation and real estate marketplace connecting providers, landlords, and clients.',
         architectureDetails:
-          'Detailed use-case, class, and sequence diagrams paired with a normalized relational schema ensuring referential integrity across bookings, service listings, and multi-role accounts.',
+            'Detailed use-case, class, and sequence diagrams paired with a normalized relational schema ensuring referential integrity across bookings, service listings, and multi-role accounts.',
         highlights: [
           'Full UML specification (use-case, class, and sequence diagrams)',
           'Normalized relational database schema ready for PostgreSQL / MySQL',
           'Clear domain boundaries separating services, real estate assets, and users',
         ],
         stack: ['UML Modeling', 'Database Architecture', 'PostgreSQL', 'Clean Architecture'],
-        image: '/src/assets/images/project_puolo_architecture_1795332637933.jpg',
+        image: puoloArchitectureImg,
         imageAlt: 'Minimalist architectural scale model on technical blueprints for PuoLo',
         featuredSpan: 'compact',
       },
@@ -704,16 +709,16 @@ const EN_DATA: PortfolioContent = {
         period: '2025 – 2026',
         context: 'Multi-Client Architecture',
         summary:
-          'End-to-end NestJS backend powered by semantic vector search (pgvector), paired with an Angular administration dashboard and a React Native mobile client.',
+            'End-to-end NestJS backend powered by semantic vector search (pgvector), paired with an Angular administration dashboard and a React Native mobile client.',
         architectureDetails:
-          'Document ingestion pipeline chunking and indexing vector embeddings directly inside PostgreSQL via pgvector. The NestJS REST API orchestrates contextual retrieval for both the Angular web console and React Native mobile app.',
+            'Document ingestion pipeline chunking and indexing vector embeddings directly inside PostgreSQL via pgvector. The NestJS REST API orchestrates contextual retrieval for both the Angular web console and React Native mobile app.',
         highlights: [
           'Vector indexing and similarity search powered by PostgreSQL pgvector',
           'Modular NestJS API structured around Clean Architecture principles',
           'Dual client ecosystem: Angular admin dashboard and React Native mobile app',
         ],
         stack: ['NestJS', 'PostgreSQL / pgvector', 'RAG', 'Angular', 'React Native'],
-        image: '/src/assets/images/project_rag_vector_1795332636095.jpg',
+        image: ragVectorImg,
         imageAlt: 'Isometric layered documents and vector search nodes for RAG platform',
         featuredSpan: 'wide',
       },
@@ -723,7 +728,7 @@ const EN_DATA: PortfolioContent = {
     kicker: 'Technical Stack',
     title: 'Engineering Capabilities',
     subtitle:
-      'Focused on backend engineering, vector databases, and DevOps automation, with full-stack delivery across web and mobile.',
+        'Focused on backend engineering, vector databases, and DevOps automation, with full-stack delivery across web and mobile.',
     allTab: 'All domains',
     domains: [
       {
@@ -844,7 +849,7 @@ const EN_DATA: PortfolioContent = {
         date: 'November 14–15, 2026',
         place: '2026 Edition',
         description:
-          'Team design and live deployment of The Last Light web application during the hackathon organized by NASA SPACE.',
+            'Team design and live deployment of The Last Light web application during the hackathon organized by NASA SPACE.',
         url: 'https://the-last-light-web.vercel.app',
         urlLabel: 'the-last-light-web.vercel.app',
       },
@@ -854,7 +859,7 @@ const EN_DATA: PortfolioContent = {
         date: 'June 2025',
         place: 'Polytechnique Yaoundé (ENSPY)',
         description:
-          'Participated and pitched an innovative technical project during the inter-school competition organized by COMSAS at ENSPY.',
+            'Participated and pitched an innovative technical project during the inter-school competition organized by COMSAS at ENSPY.',
       },
     ],
   },
@@ -862,7 +867,7 @@ const EN_DATA: PortfolioContent = {
     kicker: 'Direct Contact',
     title: 'Available for a Technical Internship',
     subtitle:
-      'Open to internship opportunities in Backend, Full-Stack, AI architectures, or DevOps in Yaoundé, internationally, or remotely.',
+        'Open to internship opportunities in Backend, Full-Stack, AI architectures, or DevOps in Yaoundé, internationally, or remotely.',
     location: 'Yaoundé, Cameroon',
     copy: 'Copy',
     copied: 'Copied',
@@ -870,7 +875,7 @@ const EN_DATA: PortfolioContent = {
     copyPhoneAria: 'Copy phone number',
     formTitle: 'Send a Message',
     formSubtitle:
-      'Write your inquiry or interview invitation: your email client will open pre-filled.',
+        'Write your inquiry or interview invitation: your email client will open pre-filled.',
     nameLabel: 'Full Name',
     namePlaceholder: 'e.g. Marc Fotso',
     emailLabel: 'Email Address',
